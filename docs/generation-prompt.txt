@@ -1,0 +1,19 @@
+Use case: stylized-concept
+Asset type: Codex desktop pet version 2 animation sprite sheet.
+Input image 1 is the character identity reference. Make this exact recognizable character into a compact full-body anime chibi desktop companion named Astra. Preserve long black hair with blue-violet galaxy stars, black cat ears with purple inner ears, lavender eyes, white T-shirt with exact small black text "ASTRA 6", purple pleated skirt. Add simple black shoes to complete the cropped reference. Cute confident friendly expression, clean dark outlines, flat cel shading, consistent face, hairstyle and outfit throughout. No extra character.
+CRITICAL OUTPUT: a PNG with real transparent alpha background, exact 1536 by 2288 pixel canvas. This is an atlas of EXACTLY 8 equally spaced columns and EXACTLY 11 equally spaced rows, making 88 cells; each cell 192 wide by 208 high. Fill EVERY cell with ONE separate full-body sprite. No grid lines, borders, captions, labels, watermarks, props or background. Keep each sprite centered in its own cell, same scale, same baseline except jumping. Each body fits within about 156x188 px with transparent margin on all sides; ears, hair, arms, shoes fully inside each cell. Never join neighboring sprites. Keep character large and readable at small desktop size. No sheet margins beyond the per-cell transparent margins.
+ANIMATION ROWS, top to bottom, read left to right:
+Row 1: idle breathing and blinking; six-frame gentle loop in cells 1-6, duplicate neutral idle in 7-8.
+Row 2: eight-frame walk/run toward screen RIGHT, with alternating feet and swaying hair.
+Row 3: eight-frame walk/run toward screen LEFT, with alternating feet and swaying hair.
+Row 4: friendly wave, four-frame loop in 1-4, repeat in 5-8.
+Row 5: cheerful small hop, crouch/rise/airborne/descend/land in 1-5, rest in 6-8.
+Row 6: eight-frame frustrated/confused reaction, modest frown and ear droop, fully clothed throughout.
+Row 7: waiting thoughtfully, six-frame loop, neutral in 7-8.
+Row 8: focused working/thinking, six-frame loop, neutral in 7-8.
+Row 9: checking/reviewing attentively, six-frame loop, neutral in 7-8.
+Row 10: fixed front-facing full-body idle pose; only eyes and slight head tilt follow 8 directions clockwise: up, up slightly right, up-right, right slightly up, right, right slightly down, down-right, down slightly right.
+Row 11: same front-facing full-body idle pose; eyes/head follow remaining 8 directions clockwise: down, down slightly left, down-left, left slightly down, left, left slightly up, up-left, up slightly left.
+Make the 11 by 8 rectangular grid geometrically precise and complete. No painted checkerboard: actual transparent background. Preserve character identity from the supplied image.
+
+Built-in image generation was followed by a second request to preserve this character, remove the background, and supply nine animation rows. With user approval, local processing removed the baked checkerboard, aligned frames, and combined the animation and looking rows into the final version 2 atlas.
